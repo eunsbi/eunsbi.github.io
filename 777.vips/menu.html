@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./_css/core.css">
+    <style>
+/*         *{outline: 1px solid red;} */
+        html,body {height: 300vh;}        
+
+        #section04 {padding-bottom: 5%;}
+        #event {width: 80%; margin: 5% auto; display: flex; justify-content: space-between; padding-top: 5%;}
+        #event li {width: 23%; height: 8.4vw;}
+        #event li img {width: 100%;}
+
+        .eventBox {
+            display: flex; align-items: center; justify-content: center; font-size: 2.5rem;
+            border-left: 3px solid #C60226; border-top: 3px solid #C60226; box-sizing: border-box;
+        }
+        .eventBox a span {font-size: 1rem;}
+        .eventBox a:hover span {color: #C60226;}
+
+        #section08 {width: 80%; height: auto; margin: 5% auto 10%; display: flex; justify-content: space-between;}
+        .eventBigBox {width: 28%;}
+        .eventBigBox:hover h4{color: #C60226;}
+        .eventBigBox img {width: 100%; border-radius: 10px;}
+        .eventSmall {width: 70%; display: flex; flex-direction: column;}
+
+        .eventTitle {height: 15%; width: 100%; display: flex; border-left: 5px solid #C60226; box-sizing: border-box;}
+        .eventTitle P {font-size: 2.5rem; margin-left: 2%; position: relative; top: -5%;}
+        .eventTitle span {height: 50%; position: relative; top: 45%; left: 20px;}
+
+        .eventMain {height: 80%; width: 100%; display: flex; justify-content: space-between; margin-top: 1.5%;}
+        .eventMain .eventList {width: 30%;}
+        .eventMain .eventList img {width: 100%;}
+        .eventList:hover h4 {color: #C60226;}
+
+        .eventTxt {width: 100%; padding-bottom: 10%;}
+        .eventTxt a {padding: 2%;}
+        .eventTxt h4 {font-size: 1.5rem; margin-bottom: 3%;}
+        .eventListA:hover h4 {color: #C60226;}
+        .eventMainA {height: 80%; width: 100%; display: flex; justify-content: space-between; margin-top: 1.8%;}
+        /*--------swiper---------------------*/
+
+/*         .swiper {
+            height: 80%; width: 100%; display: flex; justify-content: space-between; margin-top: 1.5%;
+        } */
+
+        .swiper-slide {
+            font-size: 16px;
+            background: #fff;
+
+        /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex; flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+        }
+        .swiper-slide:hover h4 {color: #C60226;}
+
+/*         .swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal */
+        .swiper-pagination {width: 100%; height: auto; position: absolute; bottom: 0;}
+        .swiper-pagination-bullet {background-color: #C60226; width: 0.5vw; height: 0.5vw; transition: 0.25s;}
+        .swiper-pagination-bullet-active {width: 1.5vw; border-radius: 20px; transition: 0.25s;}
+    </style>
+</head>
+<body>
+    <article id="section04">
+        <ul id="event">
+            <li class="eventBox">
+                <a href="#">
+                    EVENT<br>
+                    <span>언재나 즐거움이 가득한 VIPS의 이벤트</span>
+                </a>
+            </li>
+            <li class="eventList"><a href="#">
+                <img src="./_img/event/main_vi_20190225.jpg" alt="vi">
+                <div class="eventTxt">
+                    <a href="#">
+                        <h4>GOLDEN PREMIER</h4>
+                        <p>최상급 부위에서만 경험할수 있는 감동적 풍미의 프리미어 스테이크</p> 
+                    </a>
+                </div>
+            </a></li>
+            <li class="eventList"><a href="#">
+                <img src="./_img/event/main_vi_202104_2.jpg" alt="vi">
+                <div class="eventTxt">
+                    <a href="#">
+                        <h4>SMOKE WOOD BOX STEAK</h4>
+                        <p>참나무 스모크 레이어링으로 깊고 진하게 완성한 빕스 시그니처 스테이크</p>
+                    </a>
+                </div>
+            </a></li>
+            <li class="eventList"><a href="#">
+                <img src="./_img/event/main_vi_202105.jpg" alt="vi">
+                <div class="eventTxt">
+                    <a href="#">
+                        <h4>CHEF GO RESTAURANT</h4>
+                        <p>딜리버리부터 밀키트, 선물세트까지 셰프의 솜시를 담다.</p>
+                    </a>
+                </div>
+            </a></li>
+        </ul>
+    </article>
+    <article id="section08">
+        <div class="eventBigBox"><a href="#">
+            <img src="./_img/event/main_visual01_20141001.jpg" alt="">
+            <div class="eventTxt">
+                <a href="#">
+                    <h4>FALL IN VIPS STEAK</h4>
+                    <p>가을 풍성함이 담긴 스페셜 세트를 다함께 즐겨보세요!</p> 
+                </a>
+            </div>
+        </a></div>
+        <div class="eventSmall">
+            <div class="eventTitle"><p>EVENT</p><span>언제나 즐거움이 가득한 VIPS 이벤트</span></div>
+            <ul class="eventMain">
+                <li class="eventList"><a href="#">
+                    <img src="./_img/event/main_vi_20190225.jpg" alt="vi">
+                    <div class="eventTxt">
+                        <a href="#">
+                            <h4>GOLDEN PREMIER</h4>
+                            <p>최상급 부위에서만 경험할수 있는 감동적 풍미의 프리미어 스테이크</p> 
+                        </a>
+                    </div>
+                </a></li>
+                <li class="eventList"><a href="#">
+                    <img src="./_img/event/main_vi_202104_2.jpg" alt="vi">
+                    <div class="eventTxt">
+                        <a href="#">
+                            <h4>SMOKE WOOD BOX</h4>
+                            <p>참나무 스모크 레이어링으로 깊고 진하게 완성한 빕스 시그니처 스테이크</p>
+                        </a>
+                    </div>
+                </a></li>
+                <li class="eventList"><a href="#">
+                    <img src="./_img/event/main_vi_202105.jpg" alt="vi">
+                    <div class="eventTxt">
+                        <a href="#">
+                            <h4>CHEF RESTAURANT</h4>
+                            <p>딜리버리부터 밀키트, 선물세트까지 셰프의 솜시를 담다.</p>
+                        </a>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article id="section08">
+        <div class="eventBigBox"><a href="#">
+            <img src="./_img/event/main_visual01_20141001.jpg" alt="">
+            <div class="eventTxt">
+                <a href="#">
+                    <h4>FALL IN VIPS STEAK</h4>
+                    <p>가을 풍성함이 담긴 스페셜 세트를 다함께 즐겨보세요!</p> 
+                </a>
+            </div>
+        </a></div>
+        <div class="eventSmall">
+            <div class="eventTitle"><p>EVENT</p><span>언제나 즐거움이 가득한 VIPS 이벤트</span></div>
+            <div class="swiper mySwiper eventMainA">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="eventListA">
+                            <img src="./_img/event/main_vi_20190225.jpg" alt="vi">
+                            <div class="eventTxt">
+                                <a href="#">
+                                    <h4>GOLDEN PREMIER</h4>
+                                    <p>최상급 부위에서만 경험할수 있는 감동적 풍미의 프리미어 스테이크</p> 
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="eventListA">
+                            <img src="./_img/event/main_vi_20220421.jpg" alt="vi">
+                            <div class="eventTxt">
+                                <a href="#">
+                                    <h4>ALL NEW VIPS</h4>
+                                    <p>빕스 고메 컬렉션 돌아온 1997 스테이크 프리미엄 셀러드바</p> 
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./_img/event/main_vi_202104_2.jpg" alt="vi">
+                            <div class="eventTxt">
+                                <a href="#">
+                                    <h4>SMOKE WOOD BOX</h4>
+                                    <p>참나무 스모크 레이어링으로 깊고 진하게 완성한 스테이크</p>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./_img/event/main_vi_202105.jpg" alt="vi">
+                            <div class="eventTxt">
+                                <a href="#">
+                                    <h4>CHEF RESTAURANT</h4>
+                                    <p>딜리버리부터 밀키트, 선물세트까지 셰프의 솜시를 담다.</p>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./_img/event/202110141010047285.jpg" alt="vi">
+                            <div class="eventTxt">
+                                <a href="#">
+                                    <h4>VIPS LOUNGE</h4>
+                                    <p>빕스 라운지에서 편안하고 여유롭게 즐겨보세요!</p> 
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./_img/event/yumdelivery_story01.jpg" alt="vi">
+                            <div class="eventTxt">
+                                <a href="#">
+                                    <h4>VIPS DELIVERY</h4>
+                                    <p>premium dining delivery service! 빕스 얌 딜리버리</p> 
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </article>
+
+
+   <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#" class="eventListA">
+                    <img src="./_img/event/main_vi_20190225.jpg" alt="vi">
+                    <div class="eventTxt">
+                        <a href="#">
+                            <h4>GOLDEN PREMIER</h4>
+                            <p>최상급 부위에서만 경험할수 있는 감동적 풍미의 프리미어 스테이크</p> 
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="eventListA">
+                    <img src="./_img/event/main_vi_20220421.jpg" alt="vi">
+                    <div class="eventTxt">
+                        <a href="#">
+                            <h4>ALL NEW VIPS</h4>
+                            <p>빕스 고메 컬렉션 돌아온 1997 스테이크 프리미엄 셀러드바</p> 
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="./_img/event/main_vi_202104_2.jpg" alt="vi">
+                    <div class="eventTxt">
+                        <a href="#">
+                            <h4>SMOKE WOOD BOX</h4>
+                            <p>참나무 스모크 레이어링으로 깊고 진하게 완성한 빕스 시그니처 스테이크</p>
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="./_img/event/main_vi_202105.jpg" alt="vi">
+                    <div class="eventTxt">
+                        <a href="#">
+                            <h4>CHEF RESTAURANT</h4>
+                            <p>딜리버리부터 밀키트, 선물세트까지 셰프의 솜시를 담다.</p>
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="./_img/event/main_visual01_201.jpg" alt="vi">
+                    <div class="eventTxt">
+                        <a href="#">
+                            <h4>FALL IN VIPS STEAK</h4>
+                            <p>가을 풍성함이 담긴 스페셜 세트를 다함께 즐겨보세요!</p> 
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="./_img/event/202110141010047285.jpg" alt="vi">
+                    <div class="eventTxt">
+                        <a href="#">
+                            <h4>VIPS LOUNGE</h4>
+                            <p>빕스 라운지에서 편안하고 여유롭게 즐겨보세요!</p> 
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="./_img/event/yumdelivery_story01.jpg" alt="vi">
+                    <div class="eventTxt">
+                        <a href="#">
+                            <h4>VIPS DELIVERY</h4>
+                            <p>premium dining delivery service! 빕스 얌 딜리버리</p> 
+                        </a>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+    </script>
+</body>
+</html>

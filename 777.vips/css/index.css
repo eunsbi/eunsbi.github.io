@@ -1,0 +1,141 @@
+@import url(./common.css);
+
+/*=================================Section02==============================*/
+
+#section02 {width: 80%; margin-top: -15vw; margin-left: 10%; padding-bottom: 5%; display: flex; justify-content: space-between;}
+iframe {width: 50vw; height: 27vw;}
+.section02txt {
+    width: 40%; margin-left: 5%; font-size: 3.5rem; display: flex; flex-direction: column;
+    position: relative; top: 10vw; opacity: 0;
+}
+.section02txt P {width: 100%; position: relative; top: 10vw;  opacity: 0;}
+.section02title {font-size: 4rem; font-weight: bold; display: block; margin: 5% 0; padding-bottom: 5%;}
+.txtright {padding: 5% 0; margin-left: 5vw;}
+
+.section02txt.active {top: 0; transition: 0.7s; opacity: 1;}
+.section02ttat.active {top: 0; transition: 1s; opacity: 1;}
+
+/*=====================================section03=====================================*/
+
+#section03 {margin: 5% auto;}
+.section03title {width: 100%; text-align: center; font-size: 4rem; margin: 5% auto; font-weight: bold;}
+
+#section03in {height: 200vw; display: flex;}
+.midline {
+    width: 0.2vw; height: 200vw; border-radius: 10px; background-color: #333;
+    display: flex; flex-direction: column; justify-content: space-around; align-items: center;
+}
+.midround {width: 1vw; height: 1vw; border-radius: 50%; background-color: #333;} 
+#section03left {
+    width: 45%; margin-left: 10%;
+    display: flex; flex-direction: column; justify-content: space-around; align-items: center;
+}
+#section03right {
+    width: 45%;  margin-right: 10%;
+    display: flex; flex-direction: column; justify-content: space-around; align-items: center;
+}
+.section03cox {width: 100%; height: 40vw; display: flex; align-items: center; justify-content: center;}
+.section03cox img {width: 95%;}
+.section03cox p {font-size: 2.5rem; line-height: 3rem;}
+.section03cox span {font-weight: bold; font-size: 2rem;}
+
+.cox04 {text-align: right;}
+.cox08 {text-align: right;}
+
+/*===================================scroll=============================================*/
+
+.coximg {position: relative; top: 20vw; opacity: 0;}
+.coxtxt {position: relative; left: 20vw; opacity: 0;}
+
+.coximg.active {top: 0; transition: 0.5s; opacity: 1;}
+.coxtxt.active {left: 0; transition: 0.7s; opacity: 1;}
+
+/*-------------------------------------legend---------------------------------------------------*/
+
+.section03end {width: 80%; margin: 5% auto; text-align: center; font-size: 3rem; color: #C60226; font-weight: bold;}
+.legend {width: 80%; margin: 0 auto; display: flex; align-items: center; justify-content: center; opacity: 0; cursor: pointer;}
+.legend img{width: 70%;}
+.legend.active {opacity: 1; transition: 1s;}
+
+/*=====================================section04=====================================*/
+
+#section08 {width: 80%; height: auto; margin: 10% auto 0%; display: flex; justify-content: space-between;}
+.eventBigBox {width: 28%;}
+.eventBigBox:hover h4{color: #C60226;}
+.eventBigBox img {width: 100%; border-radius: 10px;}
+.eventSmall {width: 70%; display: flex; flex-direction: column;}
+
+.eventTitle {height: 15%; width: 100%; display: flex; border-left: 5px solid #C60226; box-sizing: border-box;}
+.eventTitle P {font-size: 2.5rem; font-weight: bold; margin-left: 2%; position: relative; top: 5%; color: #C60226;}
+.eventTitle span {height: 50%; position: relative; top: 45%; left: 20px;}
+
+.eventMain {height: 80%; width: 100%; display: flex; justify-content: space-between; margin-top: 1.5%;}
+.eventMain .eventList {width: 30%;}
+.eventMain .eventList img {width: 100%;}
+.eventList:hover h4 {color: #C60226;}
+
+.eventTxt {width: 100%; height: 5vw; padding-bottom: 10%;}
+.eventTxt a {padding: 2%;}
+.eventTxt h4 {font-size: 1.5rem; margin-bottom: 3%;}
+.eventListA:hover h4 {color: #C60226;}
+.eventMainA {height: 80%; width: 100%; display: flex; justify-content: space-between; margin-top: 1.3%;}
+/*--------swiper---------------------*/
+
+/*         .swiper {
+    height: 80%; width: 100%; display: flex; justify-content: space-between; margin-top: 1.5%;
+} */
+
+.swiper-slide {
+    font-size: 16px;
+    background: #fff;
+
+/* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+.swiper-slide:hover h4 {color: #C60226;}
+
+
+.swiper-pagination {width: 100%; height: auto; position: absolute; bottom: 0;}
+.swiper-pagination-bullet {background-color: #C60226; width: 0.5vw; height: 0.5vw; transition: 0.25s;}
+.swiper-pagination-bullet-active {width: 1.5vw; border-radius: 20px; transition: 0.25s;}
+
+/*=====================================section05=====================================*/
+
+#section05 {width: 80%; margin: 10% auto 10%; display: flex;}
+
+.iconBox {width: 33.33333%; height: 8vw; display: flex; align-items: center; justify-content: center;}
+.iconBox01 {background-color: #000; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.iconBox01 a {width: 70%;}
+.iconBox01 a img {width: 100%;}
+.iconBox01:hover img {transform: scale(110%);}
+
+.iconBox02 a {width: 100%; height: inherit; display: flex; color: #fff; background-color: #333;}
+.iconBox02 a:hover .iconBoximg {transform: scale(110%);}
+.iconBox02 a:hover .boxLine {width: 60%; transition: 0.5s;}
+.iconBox03 a {width: 100%; height: inherit; display: flex; color: #fff; background-color: #C60226;}
+.iconBox03 a:hover .iconBoximg {transform: scale(110%);}
+.iconBox03 a:hover .boxLine {width: 60%; transition: 0.5s;}
+
+.iconBoxtxt {display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.iconBoximg {display: flex; align-items: center; font-size: 3rem;}
+
+.iconBoxtxt {width: 80%; height: inherit;}
+.iconBoxtxt h4 {font-size: 2rem;}
+.iconBoximg {width: 20%; height: inherit;}
+
+.boxLine {background-color: #fff; width: 20%; height: 2px; margin-top: 5%; transition: 0.5s;}
